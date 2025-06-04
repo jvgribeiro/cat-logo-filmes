@@ -1,0 +1,23 @@
+{
+  "name": "cat-logo-filmes",
+  "version": "1.0.0",
+  "description": "Catálogo de filmes utilizando HTML. CSS e JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvgribeiro/cat-logo-filmes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jvgribeiro/cat-logo-filmes/issues"
+  },
+  "homepage": "https://github.com/jvgribeiro/cat-logo-filmes#readme",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

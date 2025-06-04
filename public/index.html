@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="shortcut icon"
+      type="imagex/png"
+      href="outras-fotos/logo-nova.png"
+    />
+    <title>
+      Catálogo de filmes || Venha decidir qual filme você irá assistir!
+    </title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <div class="container-fluid py-3 bg-dark text-light">
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center text-md-start">
+          <img
+            src="outras-fotos/logo-nova.png"
+            alt="Logo catálogo"
+            class="img-fluid"
+            style="max-height: 200px"
+          />
+        </div>
+
+        <div class="col-md-4 text-center text-md-start">
+          <a href="grafico.html">
+            <h3>
+              Veja aqui o gráfico dos <br />
+              anos dos filmes!
+            </h3>
+          </a>
+        </div>
+
+        <div class="col-md-3" id="foto-login">
+          <a href="/public/cadastro.html">
+            <h3>Poste seu filme aqui!</h3>
+          </a>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col text-center">
+          <h1 class="fw-bold text-warning">
+            Tudo que você precisa saber sobre os filmes!
+          </h1>
+          <p class="text-light">Somente na JV's Movies!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção de Destaques -->
+    <div id="fundo">
+      <div class="container my-5">
+        <h3 class="text-light">Itens em destaque</h3>
+        <hr class="bg-light" />
+      </div>
+      <!-- Carousel -->
+      <div class="container mb-5">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <a href="detalhes.html?id=1">
+                <img
+                  src="/public/assets/fotos-filmes/alibertacao.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="A Libertação"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"
+                >
+                  <h5 class="text-warning">A libertação</h5>
+                  <p>
+                    Uma mulher enfrenta o passado sombrio de um convento
+                    enquanto luta por justiça.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <a href="detalhes.html?id=2">
+                <img
+                  src="/public/assets/fotos-filmes/terrifier3.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="Terrifier 3"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"
+                >
+                  <h5 class="text-warning">Terrifier 3</h5>
+                  <p>
+                    O palhaço assassino Art retorna para espalhar o terror em um
+                    novo Halloween sangrento.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <a href="detalhes.html?id=3">
+                <img
+                  src="/public/assets/fotos-filmes/demolidor.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="Demolidor"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"
+                >
+                  <h5 class="text-warning">Demolidor: Renascido</h5>
+                  <p>
+                    O vigilante cego de Hell's Kitchen enfrenta inimigos
+                    perigosos enquanto busca redenção.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+      <!-- Cartões de Filmes -->
+      <div class="container my-5">
+        <h3 class="text-light">Todos os itens</h3>
+        <hr class="bg-light" />
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"
+        >
+          <div class="col">
+            <a href="detalhes.html?id=4" class="text-decoration-none">
+              <div class="card h-100 bg-dark text-light">
+                <img
+                  src="https://lumiere-a.akamaihd.net/v1/images/elemental_bport_765442cf.png"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-warning">Elementos</h5>
+                  <p class="card-text">
+                    Aventura animada entre seres de fogo, água, terra e ar.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <a href="detalhes.html?id=5" class="text-decoration-none">
+            <div class="card h-100 bg-dark text-light">
+              <img
+                src="assets/fotos-filmes/ricos-de-amor.webp"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-warning">Ricos de amor 2</h5>
+                <p class="card-text">Nem todo recomeço começa do zero.</p>
+              </div>
+            </div>
+          </a>
+          <a href="detalhes.html?id=6" class="text-decoration-none">
+            <div class="card h-100 bg-dark text-light">
+              <img
+                src="https://tocaoterror.com.br/wp-content/uploads/2025/01/b8f0564b-7b20-4141-a0d7-0a5b63d6e7a4.webp"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-warning">Lobisomem</h5>
+                <p class="card-text">Nem toda fera uiva apenas à luz da lua.</p>
+              </div>
+            </div>
+          </a>
+          <a href="detalhes.html?id=7" class="text-decoration-none">
+            <div class="card h-100 bg-dark text-light">
+              <img
+                src="assets/fotos-filmes/oppenheimer.webp"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-warning">Oppenheimer</h5>
+                <p class="card-text">
+                  Nem todo apocalipse começa com gritos. Alguns começam com
+                  silêncio.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="detalhes.html?id=8" class="text-decoration-none">
+            <div class="card h-100 bg-dark text-light">
+              <img
+                src="assets/fotos-filmes/smile-2.webp"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-warning">Sorria 2</h5>
+                <p class="card-text">Nem todo sorriso é sinal de alegria.</p>
+              </div>
+            </div>
+          </a>
+          <a href="detalhes.html?id=9" class="text-decoration-none">
+            <div class="card h-100 bg-dark text-light">
+              <img
+                src="assets/fotos-filmes/a-primeira-profecia.webp"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-warning">A primeira profecia</h5>
+                <p class="card-text">Nem toda fé leva à salvação.</p>
+              </div>
+            </div>
+          </a>
+          <a href="detalhes.html?id=10" class="text-decoration-none">
+            <div class="card h-100 bg-dark text-light">
+              <img
+                src="assets/fotos-filmes/homem-aranha.webp"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-warning">
+                  Homem-Aranha: Através do Aranhaverso
+                </h5>
+                <p class="card-text">
+                  Nem todo herói escolhe o próprio destino.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="detalhes.html?id=11" class="text-decoration-none">
+            <div class="card h-100 bg-dark text-light">
+              <img
+                src="assets/fotos-filmes/anora.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-warning">Anora</h5>
+                <p class="card-text">
+                  Nem todo conto de fadas sobrevive ao casamento.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="container-fluid bg-dark text-light py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="text-primary">Sobre</h5>
+          <p>
+            Este portal foi desenvolvido com o objetivo de compartilhar
+            informações claras, organizadas e confiáveis sobre diversos filmes
+            selecionados. Aqui, você encontrará sinopses, trailers, curiosidades
+            e muito mais sobre produções do cinema que marcaram época ou se
+            destacam por sua qualidade.
+          </p>
+          <p>
+            Nosso foco é oferecer uma experiência agradável e informativa para
+            todos os apaixonados por cinema. O projeto é resultado de um
+            trabalho acadêmico no curso de Análise e Desenvolvimento de
+            Sistemas, unindo tecnologia, design e conteúdo de qualidade.
+          </p>
+          <p>
+            Esperamos que aproveite sua navegação e descubra novos filmes para
+            assistir!
+          </p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img
+            src="outras-fotos/foto-joao.jpeg"
+            alt="Foto do João"
+            class="img-fluid rounded"
+            style="max-height: 150px"
+          />
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-primary">Autoria</h5>
+          <p><strong>Aluno:</strong> João Vitor Gomes Ribeiro</p>
+          <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+          <p><strong>Turma:</strong> Noite</p>
+          <p class="text-primary">Redes Sociais:</p>
+          <img
+            src="outras-fotos/instagram.png"
+            alt="Instagram"
+            class="img-fluid"
+            style="height: 40px; width: 40px"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

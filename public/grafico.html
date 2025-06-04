@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de filmes || JV's Movies</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/grafico.css" />
+    <link
+      rel="shortcut icon"
+      type="imagex/png"
+      href="outras-fotos/logo-nova.png"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>
+      Catálogo de filmes || Venha decidir qual filme você irá assistir!
+    </title>
+  </head>
+   <div class="container-fluid py-3 bg-dark text-light">
+      <div class="row align-items-center">
+        <div class="col-md-5 col-12 text-center text-md-start mb-3 mb-md-0">
+          <a href="index.html">
+            <img
+              src="outras-fotos/logo-nova.png"
+              alt="Logo catálogo"
+              class="img-fluid"
+              style="max-height: 200px"
+            />
+          </a>
+        </div>
+
+        <div class="col-md-4 col-12 text-center text-md-start mb-3 mb-md-0">
+          <a href="grafico.html">
+            <h3>
+              Veja aqui o gráfico dos <br />
+              anos dos filmes!
+            </h3>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-12 text-center text-md-end">
+          <a href="/public/cadastro.html">
+            <h3>Poste seu filme aqui!</h3>
+          </a>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col text-center">
+          <h1 class="fw-bold text-warning">
+            Tudo que você precisa saber sobre os filmes!
+          </h1>
+          <p class="text-light">Somente na JV's Movies!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gráfico -->
+    <div class="fundo_grafico">
+      <h1>Gráfico de Pizza de acordo com o ano de lançamento dos filmes!</h1>
+      <canvas id="divPieChart"></canvas>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-light py-4">
+      <div class="row text-center text-md-start">
+        <div class="col-md-6 mb-3">
+          <h5 class="text-primary">Sobre</h5>
+          <p>
+            Este portal foi desenvolvido com o objetivo de compartilhar
+            informações claras, organizadas e confiáveis sobre diversos filmes
+            selecionados. Aqui, você encontrará sinopses, trailers, curiosidades
+            e muito mais sobre produções do cinema que marcaram época ou se
+            destacam por sua qualidade.
+          </p>
+          <p>
+            Nosso foco é oferecer uma experiência agradável e informativa para
+            todos os apaixonados por cinema. O projeto é resultado de um
+            trabalho acadêmico no curso de Análise e Desenvolvimento de
+            Sistemas, unindo tecnologia, design e conteúdo de qualidade.
+          </p>
+          <p>
+            Esperamos que aproveite sua navegação e descubra novos filmes para
+            assistir!
+          </p>
+        </div>
+
+        <div class="col-md-3 mb-3">
+          <img
+            src="outras-fotos/foto-joao.jpeg"
+            alt="Foto do João"
+            class="img-fluid rounded"
+            style="max-height: 150px"
+          />
+        </div>
+
+        <div class="col-md-3">
+          <h5 class="text-primary">Autoria</h5>
+          <p><strong>Aluno:</strong> João Vitor Gomes Ribeiro</p>
+          <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+          <p><strong>Turma:</strong> Noite</p>
+          <p class="text-primary">Redes Sociais:</p>
+          <img
+            src="outras-fotos/instagram.png"
+            alt="Instagram"
+            class="img-fluid"
+            style="height: 40px; width: 40px"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script Chart -->
+    <script src="assets/js/grafico.js"></script>
+  </body>
+</html>

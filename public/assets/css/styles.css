@@ -1,0 +1,119 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+#rolagem img {
+  max-height: 80vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+p,
+h3 {
+  color: white;
+}
+
+h5,
+h1 {
+  color: #ffc107;
+}
+
+.card-title {
+  color: #ffc107;
+}
+
+#cabecalho img {
+  max-height: 100px;
+  width: auto;
+}
+
+hr {
+  height: 5px;
+  background-color: white;
+  border: none;
+}
+
+#rodape img {
+  height: auto;
+  max-height: 150px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.destaque {
+  color: #0d6efd;
+}
+
+#rodape #instagram {
+  height: 40px;
+  width: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  text-align: center;
+}
+
+li {
+  color: #ffc107;
+}
+
+/* Ajuste para texto em cartões */
+.card-text {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  #cabecalho .col-9,
+  #cabecalho .col-3 {
+    text-align: center;
+  }
+
+  #cabecalho img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .btn-group {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .carousel-caption h5,
+  .carousel-caption p {
+    font-size: 14px;
+  }
+
+  .card-body {
+    padding: 0.75rem;
+  }
+
+  .row-cols-md-4 > * {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.img-carousel {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.imagem-branca {
+  filter: brightness(0) invert(1);
+}
+
+h3 {
+  color: #ffc107;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="shortcut icon" type="imagex/png" href="outras-fotos/logo-nova.png">
+    <title>
+      Catálogo de filmes || Venha decidir qual filme você irá assistir!
+    </title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    
+    <h1 class="text-center mb-4 informacao">Cadastro de Filmes</h1>
+
+    <form id="formFilme" class="mb-5 informacao">
+      <input type="hidden" id="filmeId" />
+      <div class="mb-3">
+        <label for="titulo" class="form-label informacao">Título</label>
+        <input type="text" class="form-control" id="titulo" required />
+      </div>
+      <div class="mb-3">
+        <label for="genero" class="form-label informacao">Gênero</label>
+        <input type="text" class="form-control" id="genero" required />
+      </div>
+      <div class="mb-3">
+        <label for="ano" class="form-label informacao">Ano</label>
+        <input type="number" class="form-control" id="ano" required />
+      </div>
+      <button type="submit" class="btn btn-danger">Salvar Filme</button>
+      <button type="reset" class="btn btn-secondary">Limpar</button>
+    </form>
+
+    <h2 class="mb-3 informacao">Filmes Cadastrados</h2>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Título</th>
+          <th>Gênero</th>
+          <th>Ano</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaFilmes">
+        <!-- Conteúdo dinâmico -->
+      </tbody>
+    </table>
+  </div>
+    <footer class="container-fluid bg-dark text-light py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="text-primary">Sobre</h5>
+          <p>
+            Este portal foi desenvolvido com o objetivo de compartilhar
+            informações claras, organizadas e confiáveis sobre diversos filmes
+            selecionados. Aqui, você encontrará sinopses, trailers, curiosidades
+            e muito mais sobre produções do cinema que marcaram época ou se
+            destacam por sua qualidade.
+          </p>
+          <p>
+            Nosso foco é oferecer uma experiência agradável e informativa para
+            todos os apaixonados por cinema. O projeto é resultado de um
+            trabalho acadêmico no curso de Análise e Desenvolvimento de
+            Sistemas, unindo tecnologia, design e conteúdo de qualidade.
+          </p>
+          <p>
+            Esperamos que aproveite sua navegação e descubra novos filmes para
+            assistir!
+          </p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img
+            src="outras-fotos/foto-joao.jpeg"
+            alt="Foto do João"
+            class="img-fluid rounded"
+            style="max-height: 150px"
+          />
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-primary">Autoria</h5>
+          <p><strong>Aluno:</strong> João Vitor Gomes Ribeiro</p>
+          <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+          <p><strong>Turma:</strong> Noite</p>
+          <p class="text-primary">Redes Sociais:</p>
+          <img
+            src="outras-fotos/instagram.png"
+            alt="Instagram"
+            class="img-fluid"
+            style="height: 40px; width: 40px"
+          />
+        </div>
+      </div>
+    </footer>
+
+   <script src="assets/js/cadastro.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/filmes.css" />
+    <link rel="shortcut icon" type="imagex/png" href="outras-fotos/logo-nova.png">
+    <title>Catálogo de filmes || Venha decidir qual filme você irá assistir!</title>
+  </head>
+  <body>
+    
+    
+    <div class="container-fluid" id="cabecalho">
+      <div class="row">
+        <div class="col-12"><a href="index.html"><img src="outras-fotos/logo-nova.png" alt="Logo JV News" /></a></div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12"><h3 class="info">Informações gerais</h3></div>
+      </div>
+    </div>
+    
+    <div class="container my-4" id="principal">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <img id="imagem_filme" src="" alt="" class="img-fluid rounded"> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 id="titulo" class="text-warning"></h2>
+          <h5 id="sinopse" class="text-warning"></h5>
+          <p id="p_sinopse" class="text-light"></p>
+          <h3 id="elenco" class="text-warning mt-4">Elenco</h3>
+          <div class="mb-3">
+            <h4 id="ator_1" class="text-warning"></h4>
+            <p id="p_ator_1" class="text-light"></p>
+            <h4 id="ator_2" class="text-warning"></h4>
+            <p id="p_ator_2" class="text-light"></p>
+            <h4 id="ator_3" class="text-warning"></h4>
+            <p id="p_ator_3" class="text-light"></p>
+            <h4 id="ator_4" class="text-warning"></h4>
+            <p id="p_ator_4" class="text-light"></p>
+            <h4 id="ator_5" class="text-warning"></h4>
+            <p id="p_ator_5" class="text-light"></p>
+            <h4 id="trailer" class="text-warning">Trailer</h4>
+            <iframe id="trailer_url" width="560" height="315" src="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0" allowfullscreen></iframe>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+    <!-- Rodapé -->
+    <h3 class="info">Fotos do item</h3>
+    
+    <div id="carouselCards" class="carousel slide" data-bs-ride="false"> <!-- autoplay desativado -->
+        <div class="carousel-inner">
+    
+          <!-- Slide 1 (3 cards) -->
+          <div class="carousel-item active" id="carrossel1">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                  <img id="img_1" src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                  <img id="img_2" src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+                  <div class="card-body">
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                  <img id="img_3" src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+                  <div class="card-body">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Slide 2 (2 cards) -->
+          <div class="carousel-item" id="carrossel2">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-6">
+                <div class="card">
+                  <img  id="img_4" src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+                  <div class="card-body">
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6">
+                <div class="card">
+                  <img id="img_5" src="https://via.placeholder.com/300x150" class="card-img-top" alt="...">
+                  <div class="card-body">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCards" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCards" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+     <footer class="container-fluid bg-dark text-light py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="text-primary">Sobre</h5>
+          <p>
+            Este portal foi desenvolvido com o objetivo de compartilhar
+            informações claras, organizadas e confiáveis sobre diversos filmes
+            selecionados. Aqui, você encontrará sinopses, trailers, curiosidades
+            e muito mais sobre produções do cinema que marcaram época ou se
+            destacam por sua qualidade.
+          </p>
+          <p>
+            Nosso foco é oferecer uma experiência agradável e informativa para
+            todos os apaixonados por cinema. O projeto é resultado de um
+            trabalho acadêmico no curso de Análise e Desenvolvimento de
+            Sistemas, unindo tecnologia, design e conteúdo de qualidade.
+          </p>
+          <p>
+            Esperamos que aproveite sua navegação e descubra novos filmes para
+            assistir!
+          </p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img
+            src="outras-fotos/foto-joao.jpeg"
+            alt="Foto do João"
+            class="img-fluid rounded"
+            style="max-height: 150px"
+          />
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-primary">Autoria</h5>
+          <p><strong>Aluno:</strong> João Vitor Gomes Ribeiro</p>
+          <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+          <p><strong>Turma:</strong> Noite</p>
+          <p class="text-primary">Redes Sociais:</p>
+          <img
+            src="outras-fotos/instagram.png"
+            alt="Instagram"
+            class="img-fluid"
+            style="height: 40px; width: 40px"
+          />
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    
+    
+    <script src="/db/db.json"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
